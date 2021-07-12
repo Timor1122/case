@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father{
+            margin: 0 auto;
+            width: 50%;
+            /*width: 300px;*/
+            border: 2px solid black;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+
+        }
+        .box{
+            flex:1 1 100px;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            font-size: 40px;
+            color: #ffffff;
+        }
+        .box:nth-child(1) {
+            background-color: yellowgreen
+        }
+        .box:nth-child(2){
+            background-color: brown;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="box">1</div>
+    <div class="box">2</div>
+</div>
+
+</body>
+</html>
