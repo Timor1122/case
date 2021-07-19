@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #outer {
+            margin: 100px 50px;
+            background: url("demoimg/01.jpeg");
+            height: 100px;
+            width: 50px;
+            padding: 10px 50px;
+            /*overflow: scroll;*/
+            border: 1px solid red;
+            position: relative;
+        }
+
+        #inner {
+            border: 10px solid black;
+            padding: 20px;
+            height: 200px;
+            width: 50px;
+            background-color: orangered;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div id="inner"></div>
+</div>
+<script>
+   let outer=document.querySelector("#outer");
+   let inner=document.querySelector("#inner");
+   console.log(inner.offsetParent);
+   console.log(inner.offsetTop);
+   console.log(inner.offsetLeft);
+   console.log(inner.offsetWidth);
+   console.log(inner.offsetHeight);
+   let bodyElement=document.querySelector("body");
+   console.log(bodyElement.offsetParent);
+
+
+
+</script>
+</body>
+</html>

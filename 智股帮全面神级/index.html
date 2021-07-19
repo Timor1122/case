@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!--    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<body style="height: 3000px">
+<div class="banner">
+    <div class="banner-box">
+        <img alt="" src="images/banner.jpg">
+    </div>
+    <div class="banner-phone">
+        <div class="left animated fadeInUp">
+            <i class="fas fa-phone-square "></i>
+            <h3 class="">请注意接听 <span>0731-8957XX</span></h3>
+        </div>
+        <div class="right animated fadeInUp">
+            <a class="btn" href="#">立即免费开通</a>
+        </div>
+
+    </div>
+</div>
+<!--banner ends-->
+<!--text starts-->
+<section>
+    <div class="text-box w1200">
+        <img alt="" src="images/text.jpg">
+    </div>
+</section>
+<section class="slide-one w1200">
+    <div class=" swiper-container">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img alt="" src="images/slideone1.png"></div>
+            <div class="swiper-slide"><img alt="" src="images/slideone2.png"></div>
+            <div class="swiper-slide"><img alt="" src="images/slideone3.png"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</section>
+
+<section class="block-2">
+    <div class="container w1200">
+        <div class="header">
+            <img alt="" src="images/header.png">
+        </div>
+        <div class="slide-two">
+            <div class=" swiper-container">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide"><img alt="" src="images/slidetwo1.png"></div>
+                    <div class="swiper-slide"><img alt="" src="images/slidetwo2.png"></div>
+                    <div class="swiper-slide"><img alt="" src="images/slidetwo3.png"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block-3">
+    <div class="container w1200">
+        <div class="header">
+            <img alt="" src="images/block-3-header.png">
+        </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <i></i>
+                    <span>题材星空</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>板块热力图</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>一键选股</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>热点叠加</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>公司研究</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>大宗交易</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <i></i>
+                    <span>研究特供</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>债股联动</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>沪深基金</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>高管买卖</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>机构看好</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>评级调高</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+<footer>
+    <div class="top-bg">
+
+    </div>
+    <div class="middle-bg">
+        <div class="container w1200">
+
+            <div class="header">
+                <div class="left">
+                    <div class="logo">
+                        <img alt="" src="images/logo-zgb.png">
+                    </div>
+                </div>
+                <div class="right">
+                    <p>公司网址：www.hnjz0045.com</p>
+                    <p>联系地址：湖南省长沙市开福区泊富国际广场15楼</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-bg">投资有风险，入市须谨慎！</div>
+    <div style="height: 112px;opacity: 0"></div>
+</footer>
+<div class="fix-bg" id="fix-bg">
+    <img src="images/fix-bg.png" alt="">
+    <a href="#" class="btn">立即免费开通</a>
+</div>
+<script>
+    $(window).scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        // alert(scrollTop);
+        console.log(scrollTop)
+
+        var scrollHeight = $(document).height();
+        console.log(scrollHeight)
+
+        var windowHeight = $(this).height();
+        console.log(windowHeight)
+        if(scrollTop + windowHeight == scrollHeight){
+            alert("已经到最底部了！");
+        }
+    });
+</script>
+<!--text end-->
+<script>
+
+    var mySwiper = new Swiper('.swiper-container', {
+        // direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        autoplay: true
+
+    })
+</script>
+</body>
+</html>

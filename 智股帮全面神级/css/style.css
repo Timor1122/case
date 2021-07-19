@@ -1,0 +1,363 @@
+
+:root {
+    --yellow: #ffe244;
+    --black: #2c2c54;
+}
+
+* {
+    font-family: 'Nunito', sans-serif, 'aril';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+img {
+    display: block;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: #fff;
+}
+
+.btn {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffc444+0,fff644+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff644+0,ffc444+100 */
+    background: #fff644; /* Old browsers */
+    background: -moz-linear-gradient(top, #fff644 0%, #ffc444 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff644 0%, #ffc444 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff644 0%, #ffc444 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff644', endColorstr='#ffc444', GradientType=0); /* IE6-9 */
+    white-space: nowrap;
+    color: #a80012;
+    padding: .8rem 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5rem;
+    box-shadow: 0 .6rem 0 #be750d;
+    transform: scale(1);
+    animation: myScale 3s infinite;
+}
+
+.w1200 {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+@keyframes myScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+
+/*banner starts*/
+.banner .banner-box img {
+    width: 100%;
+    height: auto;
+
+}
+
+.banner-phone {
+    width: 100%;
+    padding: 2rem 50rem;
+    background-color: #a80012;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .3rem 4rem rgba(0, 0, 0, .6);
+}
+
+.banner-phone .left i, .banner-phone .left h3 {
+    display: inline-block;
+}
+
+.banner-phone .left i {
+    font-size: 4.4rem;
+}
+
+.banner-phone .left h3 {
+    white-space: nowrap;
+}
+
+
+/*banner ends*/
+
+.swiper-button-next {
+    /*先将原始箭头的颜色设置为透明的  然后设置一个背景图片  达到修改按钮样式的目的*/
+    right: 1.5%;
+    left: auto;
+    color: rgba(0, 0, 0, 0) !important;
+    background: url("../images/btn-right.png") center center no-repeat;
+    width: 56px;
+    height: 56px;
+    background-size: 100%;
+}
+
+.swiper-button-prev {
+    left: 1.5%;
+    right: auto;
+    color: rgba(0, 0, 0, 0) !important;
+    background: url("../images/btn-left.png") center center no-repeat;
+    width: 56px;
+    height: 56px;
+    background-size: 100%;
+}
+
+.slide-one ,.slide-two{
+    margin-top: 4rem;
+}
+.block-2{
+    margin-top: 4rem;
+    width: 100%;
+    height: 1620px;
+    background:url("../images/bg.png") center center no-repeat;
+}
+.block-2 .container .header{
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.block-3 .header img{
+     margin: 4rem auto ;
+}
+.block-3 .container .content ul{
+    display: flex;
+    justify-content: space-around;
+}
+.block-3 .container .content ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-3 .container .content ul li span{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.block-3 .container .content ul li:nth-child(1) i{
+    width: 150px;
+    height: 150px;
+    background:url("../images/icon-tcxk.png") center no-repeat ;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+.block-3 .container .content ul li:nth-child(1):hover i{
+    background:#e8022c url("../images/icon-tcxk-h.png" ) center no-repeat;
+
+}
+.block-3 .container .content ul li:nth-child(2) i{
+    width: 150px;
+    height: 150px;
+    background:url("../images/icon-bkrlt.png") center no-repeat ;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+.block-3 .container .content ul li:nth-child(2):hover i{
+    background:#e8022c url("../images/icon-bkrlt-h.png" ) center no-repeat;
+
+}
+
+.block-3 .container .content ul li:nth-child(3) i{
+    width: 150px;
+    height: 150px;
+    background:url("../images/icon-fdj.png") center no-repeat ;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+.block-3 .container .content ul li:nth-child(3):hover i{
+    background:#e8022c url("../images/icon-fdj-h.png" ) center no-repeat;
+
+}
+
+.block-3 .container .content ul li:nth-child(4) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-hot.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul li:nth-child(4):hover i {
+    background: #e8022c url("../images/icon-hot-h.png") center no-repeat;
+
+}.block-3 .container .content ul li:nth-child(5) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-gsyj.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul li:nth-child(5):hover i {
+    background: #e8022c url("../images/icon-gsyj-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul li:nth-child(6) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-dzjy.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul li:nth-child(6):hover i {
+    background: #e8022c url("../images/icon-dzjy-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(1) i{
+    width: 150px;
+    height: 150px;
+    background:url("../images/icon-yjtg.png") center no-repeat ;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+.block-3 .container .content ul:nth-child(2) li:nth-child(1):hover i{
+    background:#e8022c url("../images/icon-yjtg-h.png" ) center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(2) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-zgld.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(2):hover i {
+    background: #e8022c url("../images/icon-zgld-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(3) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-hsjj.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(3):hover i {
+    background: #e8022c url("../images/icon-hsjj-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(4) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-ggmm.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(4):hover i {
+    background: #e8022c url("../images/icon-ggmm-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(5) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-jgkh.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(5):hover i {
+    background: #e8022c url("../images/icon-jgkh-h.png") center no-repeat;
+
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(6) i {
+    width: 150px;
+    height: 150px;
+    background: url("../images/icon-pjtg.png") center no-repeat;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+}
+
+.block-3 .container .content ul:nth-child(2) li:nth-child(6):hover i {
+    background: #e8022c url("../images/icon-pjtg-h.png") center no-repeat;
+
+}
+footer{
+    margin-top: 40px;
+}
+footer .top-bg{
+    height: 30px;
+    width: 100%;
+    background: url("../images/top-bg.png");
+}
+footer .middle-bg{
+    background-color: #a00a1b;
+    padding: 40px;
+
+}
+footer .container .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+footer .container .header .right p{
+    font-size: 23px;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 30px;
+}
+
+footer .bottom-bg{
+    text-align: center;
+    background-color: #2e3037;
+    color: white;
+    font-size: 23px;
+    padding: 24px;
+}
+.fix-bg{
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.fix-bg img{
+    width: 100%;
+}
+
+.fix-bg a{
+    position: absolute;
+    top: 18%;
+    right: 24%;
+}
